@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react';
 
-function Account() {
+export default function Account() {
   return (
-    <section className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Account</h1>
-      <p>Manage your account here.</p>
-    </section>
+    <div className="min-h-screen px-6 py-12 max-w-xl mx-auto">
+      <h2 className="text-3xl font-bold mb-8">Your Account</h2>
+      <p>Login and account management will be integrated here.</p>
+      <p>Subscription and cash-out functionality will appear once backend is connected.</p>
+    </div>
   );
 }
-
-export default Account;
