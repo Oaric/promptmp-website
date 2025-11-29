@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-      &copy; {new Date().getFullYear()} PromptMP. All rights reserved.
+    <footer className="bg-gray-900 text-white p-6 text-center">
+      <p>© 2025 PromptMP. All rights reserved.</p>
     </footer>
   );
 }
-
-export default Footer;
