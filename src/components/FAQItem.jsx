@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from 'react';
 
-function FAQItem({ question, answer }) {
+export default function FAQItem({ question, answer }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="mb-4">
-      <h3 className="font-semibold">{question}</h3>
-      <p>{answer}</p>
+    <div className="border-b py-4 cursor-pointer" onClick={() => setOpen(!open)}>
+      <h4 className="font-semibold">{question}</h4>
+      {open && <p className="mt-2">{answer}</p>}
     </div>
   );
 }
-
-export default FAQItem;
